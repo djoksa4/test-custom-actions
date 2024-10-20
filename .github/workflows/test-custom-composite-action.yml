@@ -11,6 +11,7 @@ jobs:
               id: foo
               with:
                 who-to-greet: 'Kriss'
+                
             - run: echo random-number "$RANDOM_NUMBER"
               shell: bash
               env:
