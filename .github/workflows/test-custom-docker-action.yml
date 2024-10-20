@@ -9,7 +9,7 @@ jobs:
         steps:
             - name: Hello World action step
               id: hello
-              uses: djoksa4/actions-hello-world-docker@1
+              uses: djoksa4/actions-hello-world-docker@v1
               with:
                 who-to-greet: 'Martha'
             
