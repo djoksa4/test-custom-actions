@@ -1,0 +1,17 @@
+on:
+    push:
+        paths:
+            - .github/workflows/test-custom-javascript-action.yml
+jobs:
+    hello_world_job:
+        runs-on: 'ubuntu-latest'
+        name: 'A job to say hello'
+        steps:
+            - name: Hello World action step
+              id: hello
+              uses: djoksa4/actions-hello-world-javascript@v1
+              with:
+                who-to-greet: 'Theodore'
+            
+            - name: Get the output time
+              run: echo "The time was ${{ steps.hello.outputs.time }}"
