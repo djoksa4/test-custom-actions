@@ -6,7 +6,7 @@ jobs:
     hello:
         runs-on: ubuntu-latest
         steps:
-            - uses: djoksa4/actions-custom-label-action-ts@v2
+            - uses: djoksa4/actions-custom-label-action-ts@v2.1
               with:
                 gh-token: ${{ secrets.GITHUB_TOKEN }}
                 label: 'needs-review'
