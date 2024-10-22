@@ -1,0 +1,8 @@
+on:
+    workflow_dispatch:
+
+jobs:
+    hello:
+        runs-on: ununtu-latest
+        steps:
+            - uses: djoksa4/actions-custom-label-action-ts@v1
